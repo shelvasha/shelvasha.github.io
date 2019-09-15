@@ -1,0 +1,22 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+description: Some of the the things I like to talk about
+---
+
+<ul class="post-list">
+
+<!-- This loops through the paginated posts -->
+
+    {% for post in site.posts %}
+      <li>
+        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
+        <p>{{ post.description }}</p>
+        <br/>
+        <hr/>
+      </li>
+    {% endfor %}
+</ul>
+

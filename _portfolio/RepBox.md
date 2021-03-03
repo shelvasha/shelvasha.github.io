@@ -1,13 +1,13 @@
 ---
 layout: post
 title: RepBox
-description: A miRNA discovery pipeline
+description: A bioinformatics pipeline that identifies and analyzes novel repeats.
 img:
 ---
 
 A bioinformatics pipeline that identifies and analyzes novel repeats. This pipeline uses updated software packages specific in identifying classes and families of repeats as well as traditional repeat identification and masking tools RepeatModeler and RepeatMasker.
 
-## Dependencies
+### Dependencies
 - Perl v5.30.2
 - Python 3.0+
 - Homebrew/Linuxbrew
@@ -24,14 +24,14 @@ A bioinformatics pipeline that identifies and analyzes novel repeats. This pipel
   - VSEARCH v2.14.1
   - Other RepeatModeler dependencies (Located in /bin directory)
 
-## Installation
+### Installation
 RepBox uses bash script to install dependencies and requires super-user permissions for the installation of some Perl and Python modules.
 
-## Usage
-### Quick Use
+### Usage
+#### Quick Use
 RepBox is simple to run, however it is suggested to place the Github download in your home directory. After installation of all dependencies, simply place your genome of interest in the /genome subdirectory in the main directory of RepBox. The pipeline accepts various extensions representing a fasta file (.fa, .fasta, .fna, .fas).
 
-### Analysis Runtime:
+#### Analysis Runtime:
 Due to the dependence of RepBox on RepeatModeler, it can take some time to properly analyze any provided genome. We are hoping to implement multi-threading in the future, but in the meantime, it is suggested that analysis be performed on a high-performance cluster.
 
 <!-- View on Github Button -->

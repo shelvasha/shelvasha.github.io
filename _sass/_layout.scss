@@ -135,8 +135,11 @@ text-align: center;
  * Posts  **********************************************************
  */
 .post-header {
-margin-bottom: $vertical-spacing-unit;
+// margin-bottom: $vertical-spacing-unit;
+margin-bottom: 0;
+
 }
+
 .post-title {
 font-size: 42px;
 letter-spacing: -1px;

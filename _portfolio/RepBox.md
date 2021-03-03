@@ -49,18 +49,3 @@ RepBox is simple to run, however it is suggested to place the Github download in
 
 ### Runtime
 Due to the dependence of RepBox on RepeatModeler, it can take some time to properly analyze any provided genome. We are hoping to implement multi-threading in the future, but in the meantime, it is suggested that analysis be performed on a high-performance cluster.
-
-<!-- View on Github Button -->
-<!-- <a href="" style=  
-" border-radius: 25px;
-  background-color: #808080;
-  border: none;
-  color: white;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;">View on Github
-</a> -->

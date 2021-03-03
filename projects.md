@@ -6,7 +6,7 @@ description: A display of my personal and professional projects
 ---
 <ul class="post-list">
 
-    {% for post in site.projects %}
+    {% for post in site.portfolio %}
       <li>
         <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>

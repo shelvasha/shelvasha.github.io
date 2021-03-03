@@ -1,6 +1,6 @@
 ---
 layout: post
-title: oleracea
+title: Oleracea
 description: A miRNA discovery pipeline
 img:
 ---

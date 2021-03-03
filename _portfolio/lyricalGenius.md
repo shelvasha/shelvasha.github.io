@@ -1,7 +1,7 @@
 ---
 layout: post
-title: lyricalGenius
-description: Get lyrics for your iTunes tracks 
+title: LyricalGenius
+description: Get lyrics for your iTunes tracks
 img:
 ---
 

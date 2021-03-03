@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Portfolio
-permalink: /portfolio/
+title: projects
+permalink: /projects/
 description: A display of my personal and professional projects
 ---
 <ul class="post-list">
 
-    {% for post in site.portfolio %}
+    {% for post in site.projects %}
       <li>
         <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>

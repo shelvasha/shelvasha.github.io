@@ -27,11 +27,12 @@ A bioinformatics pipeline that identifies and analyzes novel repeats. This pipel
 ### Installation
 RepBox uses bash script to install dependencies and requires super-user permissions for the installation of some Perl and Python modules.
 
+
 ### Usage
-#### Quick Use
 RepBox is simple to run, however it is suggested to place the Github download in your home directory. After installation of all dependencies, simply place your genome of interest in the /genome subdirectory in the main directory of RepBox. The pipeline accepts various extensions representing a fasta file (.fa, .fasta, .fna, .fas).
 
-#### Analysis Runtime:
+
+### Runtime
 Due to the dependence of RepBox on RepeatModeler, it can take some time to properly analyze any provided genome. We are hoping to implement multi-threading in the future, but in the meantime, it is suggested that analysis be performed on a high-performance cluster.
 
 <!-- View on Github Button -->

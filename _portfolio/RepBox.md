@@ -5,6 +5,21 @@ description: A bioinformatics pipeline that identifies and analyzes novel repeat
 img:
 ---
 
+<!-- View on Github Button -->
+<a href="https://github.com/shelvasha/RepBox" style=
+" border-radius: 25px;
+  background-color: #6cc644;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;">View on Github
+</a>
+
 A bioinformatics pipeline that identifies and analyzes novel repeats. This pipeline uses updated software packages specific in identifying classes and families of repeats as well as traditional repeat identification and masking tools RepeatModeler and RepeatMasker.
 
 ### Dependencies
@@ -36,8 +51,7 @@ RepBox is simple to run, however it is suggested to place the Github download in
 Due to the dependence of RepBox on RepeatModeler, it can take some time to properly analyze any provided genome. We are hoping to implement multi-threading in the future, but in the meantime, it is suggested that analysis be performed on a high-performance cluster.
 
 <!-- View on Github Button -->
-
-<a href="" style=  
+<!-- <a href="" style=  
 " border-radius: 25px;
   background-color: #808080;
   border: none;
@@ -49,4 +63,4 @@ Due to the dependence of RepBox on RepeatModeler, it can take some time to prope
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;">View on Github
-</a>
+</a> -->

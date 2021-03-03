@@ -146,7 +146,9 @@ sup {
  */
 
 img {
+  border-radius: 15px;
   border-style: none;
+  width: 100%;
 }
 
 /* Forms

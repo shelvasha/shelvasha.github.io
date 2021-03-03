@@ -2,10 +2,8 @@
 layout: post
 title: Oleracea
 description: A miRNA discovery pipeline
-img:
+img: "/img/broccoli.jpg"
 ---
-
-![](/img/broccoli.jpg)
 
 This project entailed development of an efficient pipeline to identify and characterize novel miRNAs in _B. oleracea_, or the plant commonly known as broccoli.
 

@@ -12,7 +12,7 @@ markdown: kramdown
 highlighter: rouge
 plugins:
   - jekyll-feed
-permalink: pretty 
+permalink: pretty
 
 # Pagination
 paginate: 5
@@ -20,11 +20,9 @@ paginate_path: "/blog/page:num/"
 
 
 collections:
-  portfolio:
+  projects:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /projects/:path/
   poetry:
     output: true
     permalink: /poetry/:path/
-
-

@@ -1,9 +1,11 @@
 ---
 layout: post
 title: RepBox
-description: A bioinformatics pipeline that identifies and analyzes novel repeats.
+description: A bioinformatics pipeline for the identification and analysis of novel repeats.
 img:
 ---
+
+<img class="col" src="/img/broccoli.jpg">
 
 <!-- View on Github Button -->
 <a href="https://github.com/shelvasha/RepBox" style=

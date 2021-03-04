@@ -5,6 +5,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/assets/fonts/Myriad Pro Regular.ttf');
+}
+
 // Our variables
 $base-font-family: Myriad Pro, Helvetica, Arial, sans-serif;
 $base-font-size:   20px;

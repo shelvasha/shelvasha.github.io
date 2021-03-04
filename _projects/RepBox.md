@@ -5,7 +5,7 @@ description: A bioinformatics pipeline for the identification and analysis of no
 img:
 ---
 
-<img class="col" src="/img/broccoli.jpg">
+<img class="col" src="/img/image.jpg">
 
 <!-- View on Github Button -->
 <a href="https://github.com/shelvasha/RepBox" style=

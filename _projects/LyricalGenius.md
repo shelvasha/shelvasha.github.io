@@ -5,6 +5,8 @@ description: Get lyrics for your iTunes tracks
 img:
 ---
 
+<img class="col" src="https://github.com/shelvasha/lyricalGenius/raw/master/example.png">
+
 <!-- View on Github Button -->
 <a href="https://github.com/shelvasha/lyricalGenius" style=
 " border-radius: 25px;

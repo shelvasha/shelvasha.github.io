@@ -10,6 +10,10 @@
   src: url('/assets/fonts/Myriad Pro Light.otf');
 }
 
+@font-face {
+  font-family: 'Myriad Pro Bold';
+  src: url('/assets/fonts/Myriad Pro Bold.ttf');
+}
 // Our variables
 $base-font-family: Myriad Pro, Helvetica, Arial, sans-serif;
 $base-font-size:   20px;

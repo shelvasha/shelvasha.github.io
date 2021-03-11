@@ -32,10 +32,9 @@ $lime_green: #B7D12A;
 $purple: #B509AC;
 $gold: #d4af37;
 
-
 $grey-color-dark: #333;   /* footer */
 $grey-color-light: #ddd;  /* navigation bar border */
-$text-color:     #666;
+$text-color:     #000;
 
 /* Set theme color *************************/
 $theme-color:   $blue;
@@ -56,8 +55,13 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+
 }
 
+::selection {
+    background-color: rgba(0,0,0,0.99);
+    color: #fff;
+}
 
 
 /**

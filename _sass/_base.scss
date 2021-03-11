@@ -127,6 +127,7 @@ h1, h2 {
     font-weight: bold;
     text-transform: none;
     padding-bottom: 0;
+    color: $text-color;
 }
 
 h3, h4, h5, h6 {
@@ -134,7 +135,7 @@ h3, h4, h5, h6 {
     font-weight: 100;
     font-size: $base-font-size;
     padding-bottom: $vertical-spacing-unit - 10;
-
+    color: $text-color;
 }
 
 /**

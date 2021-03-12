@@ -146,7 +146,6 @@ a {
     font-family: $base-font-family;
     color: $text-color;
     text-decoration: none;
-    background-color: #FFFF00;
     /*
     &:visited {
         color: darken($brand-color, 15%);
@@ -161,6 +160,7 @@ a {
 article a {
     color: $theme-color;
     font-weight: 100;
+    background-color: #FFFF00;
 
     &:hover {
         text-decoration: none;

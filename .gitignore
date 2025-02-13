@@ -2,3 +2,12 @@
 .DS_Store
 *.html.html
 .render_temp_index.html.html
+.DS_Store
+.idea/ChatGPTCopilotChannelManager.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/shelvasha.github.io.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.render_temp_index.html.html

@@ -37,32 +37,42 @@
 				  Columns run left → right, oldest → newest.
 				  Above axis = career / education milestones (colored boxes).
 				  Below axis = research, projects, publications (plain text).
+
+				  Card color guide (dark palette):
+				    lemon  #d4c41e  → dark text (--card-text / --card-date set inline)
+				    olive  #b2b218  → dark text
+				    basil  #5a8220  → cream text (default --ink)
+				    surface-2 #232319 → cream text (default)
 				-->
 
-				<!-- 2013 · BS Biology (above) -->
+				<!-- 2013 · BS Biology (above) — lemon -->
 				<div class="event-col">
 					<div class="above">
-						<div class="event-card" style="--card-color:#CFC01C">
+						<div class="event-card" style="
+							--card-color: #d4c41e;
+							--card-text:  rgba(13,13,8,0.85);
+							--card-date:  rgba(13,13,8,0.5);
+							--dot-color:  #d4c41e;">
 							<span class="date">2013</span>
 							<span class="label">BS Biology<br>UNCC</span>
 						</div>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#CFC01C"></div>
+					<div class="dot" style="--dot-color:#d4c41e"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
 
-				<!-- 2016 · MS Bioinformatics (above) -->
+				<!-- 2016 · MS Bioinformatics (above) — surface-2 / muted -->
 				<div class="event-col">
 					<div class="above">
-						<div class="event-card" style="--card-color:#AAAA88">
+						<div class="event-card" style="--card-color:#232319; border: 1px solid rgba(226,221,200,0.12);">
 							<span class="date">2016</span>
 							<span class="label">MS Bioinformatics<br>UNCC</span>
 						</div>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#AAAA88"></div>
+					<div class="dot" style="--dot-color:#5c5a48"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
@@ -81,44 +91,47 @@
 					</div>
 				</div>
 
-				<!-- 2020 · PhD (above) -->
+				<!-- 2020 · PhD (above) — olive -->
 				<div class="event-col">
 					<div class="above">
-						<div class="event-card" style="--card-color:#8B8B05">
+						<div class="event-card" style="
+							--card-color: #b2b218;
+							--card-text:  rgba(13,13,8,0.85);
+							--card-date:  rgba(13,13,8,0.5);">
 							<span class="date">2020</span>
 							<span class="label">PhD Bioinformatics<br>UNCC</span>
 						</div>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#8B8B05"></div>
+					<div class="dot" style="--dot-color:#b2b218"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
 
-				<!-- 2020–21 · Postdoc (above) -->
+				<!-- 2020–21 · Postdoc (above) — cool dark surface -->
 				<div class="event-col">
 					<div class="above">
-						<div class="event-card" style="--card-color:#BDD0DC">
+						<div class="event-card" style="--card-color:#1a2830; border: 1px solid rgba(226,221,200,0.12);">
 							<span class="date">2020–21</span>
 							<span class="label">Postdoctoral<br>Researcher<br>NC Research Campus</span>
 						</div>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#BDD0DC"></div>
+					<div class="dot" style="--dot-color:#4a7080"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
 
-				<!-- 2021–22 · Syngenta (above) -->
+				<!-- 2021–22 · Syngenta (above) — basil -->
 				<div class="event-col">
 					<div class="above">
-						<div class="event-card" style="--card-color:#4B5F1A">
+						<div class="event-card" style="--card-color:#5a8220;">
 							<span class="date">2021–22</span>
-							<span class="label" style="color:#EDE5DA">Data Scientist<br>Syngenta</span>
+							<span class="label">Data Scientist<br>Syngenta</span>
 						</div>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#4B5F1A"></div>
+					<div class="dot" style="--dot-color:#5a8220"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
@@ -130,23 +143,29 @@
 					<div class="dot"></div>
 					<div class="connector"></div>
 					<div class="below">
-						<div class="event-text">
-							<span class="date">2022</span>
-							<span class="label">AnomalySense<br>Clinical Imaging QC<br>AWS SageMaker</span>
-						</div>
+						<!-- Update href when repo is ready -->
+						<a href="https://github.com/shelvasha" target="_blank" rel="noopener" class="event-link">
+							<div class="event-text">
+								<span class="date">2022</span>
+								<span class="label">AnomalySense<br>Clinical Imaging QC<br>AWS SageMaker</span>
+							</div>
+						</a>
 					</div>
 				</div>
 
-				<!-- 2021–25 · Fitskin (above) -->
+				<!-- 2021–25 · FitSkin (above) — lemon -->
 				<div class="event-col">
 					<div class="above">
-						<div class="event-card" style="--card-color:#CFC01C">
+						<div class="event-card" style="
+							--card-color: #d4c41e;
+							--card-text:  rgba(13,13,8,0.85);
+							--card-date:  rgba(13,13,8,0.5);">
 							<span class="date">2021–25</span>
 							<span class="label">Sr. Data Scientist<br>FitSkin</span>
 						</div>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#CFC01C"></div>
+					<div class="dot" style="--dot-color:#d4c41e"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
@@ -158,10 +177,13 @@
 					<div class="dot"></div>
 					<div class="connector"></div>
 					<div class="below">
-						<div class="event-text">
-							<span class="date">2023</span>
-							<span class="label">PrecisionTone<br>Patentable ML System<br>Vision Transformers</span>
-						</div>
+						<!-- Update href when repo is ready -->
+						<a href="https://github.com/shelvasha" target="_blank" rel="noopener" class="event-link">
+							<div class="event-text">
+								<span class="date">2023</span>
+								<span class="label">PrecisionTone<br>Patentable ML System<br>Vision Transformers</span>
+							</div>
+						</a>
 					</div>
 				</div>
 
@@ -172,28 +194,30 @@
 					<div class="dot"></div>
 					<div class="connector"></div>
 					<div class="below">
-						<div class="event-text">
-							<span class="date">2023</span>
-							<span class="label">RepBox<br>BMC Bioinformatics<br>Publication</span>
-						</div>
+						<a href="https://doi.org/10.1186/s12859-023-05419-5" target="_blank" rel="noopener" class="event-link">
+							<div class="event-text">
+								<span class="date">2023</span>
+								<span class="label">RepBox<br>BMC Bioinformatics<br>Publication</span>
+							</div>
+						</a>
 					</div>
 				</div>
 
-				<!-- 2025 · Boehringer Ingelheim (above) — current & prominent -->
+				<!-- 2025 · Boehringer Ingelheim (above) — deep basil, most prominent -->
 				<div class="event-col">
 					<div class="above">
-						<div class="event-card" style="--card-color:#4B5F1A">
+						<div class="event-card" style="--card-color:#3f6018;">
 							<span class="date">2025–Now</span>
-							<span class="label" style="color:#EDE5DA">Principal Applied<br>Scientist<br>Boehringer Ingelheim</span>
+							<span class="label">Principal Applied<br>Scientist<br>Boehringer Ingelheim</span>
 						</div>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#4B5F1A"></div>
+					<div class="dot" style="--dot-color:#5a8220"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
 
-				<!-- 2025 · GenAI Pipeline (below) -->
+				<!-- 2025 · GenAI Pipeline (below — no public link) -->
 				<div class="event-col">
 					<div class="above"></div>
 					<div class="connector"></div>
@@ -207,7 +231,7 @@
 					</div>
 				</div>
 
-				<!-- 2025 · Financial Modeling (below) -->
+				<!-- 2025 · Financial Modeling (below — no public link) -->
 				<div class="event-col">
 					<div class="above"></div>
 					<div class="connector"></div>
@@ -218,6 +242,22 @@
 							<span class="date">2025</span>
 							<span class="label">Financial Modeling<br>Healthcare Commercial<br>Operations</span>
 						</div>
+					</div>
+				</div>
+
+				<!-- 2026 · Meridian (below) -->
+				<div class="event-col">
+					<div class="above"></div>
+					<div class="connector"></div>
+					<div class="dot"></div>
+					<div class="connector"></div>
+					<div class="below">
+						<a href="https://shelvasha.github.io/meridian/" target="_blank" rel="noopener" class="event-link">
+							<div class="event-text">
+								<span class="date">2026</span>
+								<span class="label">Meridian<br>Applied Scientist<br>Curriculum</span>
+							</div>
+						</a>
 					</div>
 				</div>
 

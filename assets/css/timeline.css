@@ -1,0 +1,252 @@
+/*
+  timeline.css — Horizontal career timeline
+  ─────────────────────────────────────────
+  Mediterranean Palette
+    Tuscan Sandstone : #EDE5DA
+    Amalfi Lemon     : #CFC01C
+    EVOO             : #8B8B05
+    Sicilian Sky     : #BDD0DC
+    Silver Sage      : #AAAA88
+    Large Leaf Basil : #4B5F1A
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+/* ── Reset ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Page shell ────────────────────────────────────── */
+html, body {
+  height: 100%;
+  /* Horizontal scroll lives here; no vertical scroll */
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: #EDE5DA;
+  color: #1A1A0A;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  -webkit-text-size-adjust: none;
+}
+
+.page {
+  display: flex;
+  align-items: stretch;
+  min-width: max-content;
+  height: 100%;
+}
+
+/* ── Intro panel ───────────────────────────────────── */
+.intro-panel {
+  width: 240px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 2rem 2rem 2rem 2.5rem;
+  border-right: 2px solid #4B5F1A;
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  background: #EDE5DA;
+}
+
+.intro-panel h1 {
+  font-family: 'League Spartan', Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #1A1A0A;
+}
+
+.intro-panel .subtitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #4B5F1A;
+  line-height: 1.5;
+}
+
+/* Social icons */
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1.5px solid #4B5F1A;
+  color: #4B5F1A;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+  background: #4B5F1A;
+  color: #EDE5DA;
+}
+
+/* ── Timeline scroll wrapper ───────────────────────── */
+.timeline-scroll {
+  flex: 1;
+  overflow-x: visible;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* ── Timeline track ────────────────────────────────── */
+.timeline-track {
+  position: relative;
+  display: flex;
+  align-items: center;   /* vertically center the columns */
+  height: 100%;
+  padding: 0 5rem 0 4rem;
+}
+
+/* Horizontal axis line */
+.timeline-track::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 2rem;
+  height: 1.5px;
+  background: #1A1A0A;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* ── Arrow cap ─────────────────────────────────────── */
+.timeline-arrow {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 13px solid #1A1A0A;
+  z-index: 1;
+}
+
+/* ── Event column ──────────────────────────────────── */
+.event-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Above / Below halves ──────────────────────────── */
+.above,
+.below {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.above {
+  justify-content: flex-end;
+  padding-bottom: 0.6rem;
+}
+
+.below {
+  justify-content: flex-start;
+  padding-top: 0.6rem;
+}
+
+/* ── Dashed connector lines ────────────────────────── */
+.connector {
+  width: 1px;
+  flex: 0 0 2rem;
+  border-left: 1.5px dashed rgba(26, 26, 10, 0.28);
+}
+
+/* ── Dot on axis ───────────────────────────────────── */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--dot-color, #1A1A0A);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+/* ── Colored event card (above axis) ───────────────── */
+.event-card {
+  background: var(--card-color, #AAAA88);
+  border-radius: 4px;
+  padding: 0.5rem 0.9rem;
+  line-height: 1.55;
+  text-align: center;
+  color: #1A1A0A;
+  max-width: 175px;
+}
+
+.event-card .date {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.15rem;
+}
+
+.event-card .label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* ── Plain text event (below axis) ────────────────── */
+.event-text {
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: #1A1A0A;
+  text-align: center;
+  max-width: 165px;
+}
+
+.event-text .date {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.12rem;
+}
+
+.event-text .label {
+  display: block;
+  line-height: 1.5;
+}
+
+/* ── Copyright ─────────────────────────────────────── */
+.copyright {
+  position: fixed;
+  bottom: 0.75rem;
+  left: 2.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: rgba(26, 26, 10, 0.35);
+  text-transform: uppercase;
+  pointer-events: none;
+}

@@ -27,6 +27,16 @@
 					   title="GitHub" aria-label="GitHub"></a>
 				</li>
 			</ul>
+
+			<div class="details-panel" id="details-panel" aria-live="polite" aria-atomic="true">
+				<div class="details-meta">
+					<span class="details-kicker">Event details</span>
+					<button type="button" class="details-clear" aria-label="Clear selected event">Clear</button>
+				</div>
+				<h2 class="details-title">Click an event</h2>
+				<p class="details-date"></p>
+				<p class="details-summary">Click a career/education event to see a short summary here.</p>
+			</div>
 		</div>
 
 		<!-- ── Horizontal timeline ─────────────────────── -->
@@ -47,16 +57,18 @@
 				-->
 
 				<!-- 2013 · BS Biology (above) — amber -->
-				<div class="event-col">
+				<div class="event-col" data-title="BS Biology — UNCC" data-date="2013" data-summary="Add 1–2 sentences here about this milestone (e.g., focus area, honors, or what you built/learned).">
 					<div class="above">
-						<div class="event-card" style="
-							--card-color: #e8a830;
-							--card-text:  rgba(30,28,26,0.9);
-							--card-date:  rgba(30,28,26,0.55);
-							--dot-color:  #e8a830;">
-							<span class="date">2013</span>
-							<span class="label">BS Biology<br>UNCC</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-card" style="
+								--card-color: #e8a830;
+								--card-text:  rgba(30,28,26,0.9);
+								--card-date:  rgba(30,28,26,0.55);
+								--dot-color:  #e8a830;">
+								<span class="date">2013</span>
+								<span class="label">BS Biology<br>UNCC</span>
+							</div>
+						</button>
 					</div>
 					<div class="connector"></div>
 					<div class="dot" style="--dot-color:#e8a830"></div>
@@ -65,12 +77,14 @@
 				</div>
 
 				<!-- 2016 · MS Bioinformatics (above) — parchment -->
-				<div class="event-col">
+				<div class="event-col" data-title="MS Bioinformatics — UNCC" data-date="2016" data-summary="Add a short summary here (e.g., thesis topic, tools, key projects, or research focus).">
 					<div class="above">
-						<div class="event-card" style="--card-color: var(--surface);">
-							<span class="date">2016</span>
-							<span class="label">MS Bioinformatics<br>UNCC</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-card" style="--card-color: var(--surface);">
+								<span class="date">2016</span>
+								<span class="label">MS Bioinformatics<br>UNCC</span>
+							</div>
+						</button>
 					</div>
 					<div class="connector"></div>
 					<div class="dot" style="--dot-color:#c8bfb0"></div>
@@ -79,29 +93,33 @@
 				</div>
 
 				<!-- 2017–20 · Graduate Researcher (below) -->
-				<div class="event-col">
+				<div class="event-col" data-title="Graduate Researcher & Teaching Assistant — UNCC" data-date="2017–2020" data-summary="Add a short summary here (e.g., research area, publications, courses taught, and impact).">
 					<div class="above"></div>
 					<div class="connector"></div>
 					<div class="dot"></div>
 					<div class="connector"></div>
 					<div class="below">
-						<div class="event-text">
-							<span class="date">2017–20</span>
-							<span class="label">Graduate Researcher<br>&amp; Teaching Assistant<br>UNCC</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-text">
+								<span class="date">2017–20</span>
+								<span class="label">Graduate Researcher<br>&amp; Teaching Assistant<br>UNCC</span>
+							</div>
+						</button>
 					</div>
 				</div>
 
 				<!-- 2020 · PhD (above) — indigo -->
-				<div class="event-col">
+				<div class="event-col" data-title="PhD Bioinformatics — UNCC" data-date="2020" data-summary="Add a short summary here (e.g., dissertation topic, methods, and what you contributed).">
 					<div class="above">
-						<div class="event-card" style="
-							--card-color: #3a4d8f;
-							--card-text:  rgba(245,241,235,0.92);
-							--card-date:  rgba(245,241,235,0.7);">
-							<span class="date">2020</span>
-							<span class="label">PhD Bioinformatics<br>UNCC</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-card" style="
+								--card-color: #3a4d8f;
+								--card-text:  rgba(245,241,235,0.92);
+								--card-date:  rgba(245,241,235,0.7);">
+								<span class="date">2020</span>
+								<span class="label">PhD Bioinformatics<br>UNCC</span>
+							</div>
+						</button>
 					</div>
 					<div class="connector"></div>
 					<div class="dot" style="--dot-color:#3a4d8f"></div>
@@ -110,12 +128,14 @@
 				</div>
 
 				<!-- 2020–21 · Postdoc (above) — dusty-blue -->
-				<div class="event-col">
+				<div class="event-col" data-title="Postdoctoral Researcher — NC Research Campus" data-date="2020–2021" data-summary="Add a short summary here (e.g., research focus, collaborations, and outcomes).">
 					<div class="above">
-						<div class="event-card" style="--card-color:#7a8fb5;">
-							<span class="date">2020–21</span>
-							<span class="label">Postdoctoral<br>Researcher<br>NC Research Campus</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-card" style="--card-color:#7a8fb5;">
+								<span class="date">2020–21</span>
+								<span class="label">Postdoctoral<br>Researcher<br>NC Research Campus</span>
+							</div>
+						</button>
 					</div>
 					<div class="connector"></div>
 					<div class="dot" style="--dot-color:#7a8fb5"></div>
@@ -124,15 +144,17 @@
 				</div>
 
 				<!-- 2021–22 · Syngenta (above) — forest -->
-				<div class="event-col">
+				<div class="event-col" data-title="Data Scientist — Syngenta" data-date="2021–2022" data-summary="Add a short summary here (e.g., problem space, models, and measurable impact).">
 					<div class="above">
-						<div class="event-card" style="
-							--card-color:#2e5a45;
-							--card-text: rgba(245,241,235,0.92);
-							--card-date: rgba(245,241,235,0.7);">
-							<span class="date">2021–22</span>
-							<span class="label">Data Scientist<br>Syngenta</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-card" style="
+								--card-color:#2e5a45;
+								--card-text: rgba(245,241,235,0.92);
+								--card-date: rgba(245,241,235,0.7);">
+								<span class="date">2021–22</span>
+								<span class="label">Data Scientist<br>Syngenta</span>
+							</div>
+						</button>
 					</div>
 					<div class="connector"></div>
 					<div class="dot" style="--dot-color:#2e5a45"></div>
@@ -158,15 +180,17 @@
 				</div>
 
 				<!-- 2021–25 · FitSkin (above) — terracotta -->
-				<div class="event-col">
+				<div class="event-col" data-title="Sr. Data Scientist — FitSkin" data-date="2021–2025" data-summary="Add a short summary here (e.g., end-to-end systems, stakeholders, and results).">
 					<div class="above">
-						<div class="event-card" style="
-							--card-color: #d4603a;
-							--card-text:  rgba(245,241,235,0.92);
-							--card-date:  rgba(245,241,235,0.7);">
-							<span class="date">2021–25</span>
-							<span class="label">Sr. Data Scientist<br>FitSkin</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-card" style="
+								--card-color: #d4603a;
+								--card-text:  rgba(245,241,235,0.92);
+								--card-date:  rgba(245,241,235,0.7);">
+								<span class="date">2021–25</span>
+								<span class="label">Sr. Data Scientist<br>FitSkin</span>
+							</div>
+						</button>
 					</div>
 					<div class="connector"></div>
 					<div class="dot" style="--dot-color:#d4603a"></div>
@@ -208,15 +232,17 @@
 				</div>
 
 				<!-- 2025 · Boehringer Ingelheim (above) — near-black, most prominent -->
-				<div class="event-col">
+				<div class="event-col" data-title="Principal Applied Scientist — Boehringer Ingelheim" data-date="2025–Now" data-summary="Add a short summary here (e.g., scope, leadership, and what you’re building).">
 					<div class="above">
-						<div class="event-card" style="
-							--card-color:#141210;
-							--card-text: rgba(245,241,235,0.92);
-							--card-date: rgba(245,241,235,0.7);">
-							<span class="date">2025–Now</span>
-							<span class="label">Principal Applied<br>Scientist<br>Boehringer Ingelheim</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-card" style="
+								--card-color:#141210;
+								--card-text: rgba(245,241,235,0.92);
+								--card-date: rgba(245,241,235,0.7);">
+								<span class="date">2025–Now</span>
+								<span class="label">Principal Applied<br>Scientist<br>Boehringer Ingelheim</span>
+							</div>
+						</button>
 					</div>
 					<div class="connector"></div>
 					<div class="dot" style="--dot-color:#141210"></div>
@@ -225,30 +251,34 @@
 				</div>
 
 				<!-- 2025 · GenAI Pipeline (below — no public link) -->
-				<div class="event-col">
+				<div class="event-col" data-title="GenAI Pipeline" data-date="2025" data-summary="Add a short summary here (e.g., what the pipeline does, evaluation, and outcomes).">
 					<div class="above"></div>
 					<div class="connector"></div>
 					<div class="dot"></div>
 					<div class="connector"></div>
 					<div class="below">
-						<div class="event-text">
-							<span class="date">2025</span>
-							<span class="label">GenAI Pipeline<br>LLM Classification<br>Databricks + Snowflake</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-text">
+								<span class="date">2025</span>
+								<span class="label">GenAI Pipeline<br>LLM Classification<br>Databricks + Snowflake</span>
+							</div>
+						</button>
 					</div>
 				</div>
 
 				<!-- 2025 · Financial Modeling (below — no public link) -->
-				<div class="event-col">
+				<div class="event-col" data-title="Financial Modeling" data-date="2025" data-summary="Add a short summary here (e.g., model type, inputs/outputs, and decisions it supported).">
 					<div class="above"></div>
 					<div class="connector"></div>
 					<div class="dot"></div>
 					<div class="connector"></div>
 					<div class="below">
-						<div class="event-text">
-							<span class="date">2025</span>
-							<span class="label">Financial Modeling<br>Healthcare Commercial<br>Operations</span>
-						</div>
+						<button type="button" class="event-trigger" aria-expanded="false">
+							<div class="event-text">
+								<span class="date">2025</span>
+								<span class="label">Financial Modeling<br>Healthcare Commercial<br>Operations</span>
+							</div>
+						</button>
 					</div>
 				</div>
 
@@ -277,6 +307,53 @@
 	</div><!-- .page -->
 
 	<p class="copyright">&copy; shel burkes, phd</p>
+
+	<script>
+		(() => {
+			const detailsPanel = document.getElementById('details-panel');
+			if (!detailsPanel) return;
+
+			const titleEl = detailsPanel.querySelector('.details-title');
+			const dateEl = detailsPanel.querySelector('.details-date');
+			const summaryEl = detailsPanel.querySelector('.details-summary');
+			const clearBtn = detailsPanel.querySelector('.details-clear');
+
+			const eventCols = Array.from(document.querySelectorAll('.event-col[data-summary]'));
+			const triggers = new Map();
+
+			for (const col of eventCols) {
+				const trigger = col.querySelector('.event-trigger');
+				if (!trigger) continue;
+				triggers.set(col, trigger);
+
+				trigger.addEventListener('click', () => {
+					const isSelected = col.classList.contains('is-selected');
+					selectEvent(isSelected ? null : col);
+				});
+			}
+
+			function selectEvent(col) {
+				for (const [c, t] of triggers.entries()) {
+					const selected = c === col;
+					c.classList.toggle('is-selected', selected);
+					t.setAttribute('aria-expanded', selected ? 'true' : 'false');
+				}
+
+				if (!col) {
+					if (titleEl) titleEl.textContent = 'Click an event';
+					if (dateEl) dateEl.textContent = '';
+					if (summaryEl) summaryEl.textContent = 'Click a career/education event to see a short summary here.';
+					return;
+				}
+
+				if (titleEl) titleEl.textContent = col.dataset.title || 'Event';
+				if (dateEl) dateEl.textContent = col.dataset.date || '';
+				if (summaryEl) summaryEl.textContent = col.dataset.summary || '';
+			}
+
+			clearBtn?.addEventListener('click', () => selectEvent(null));
+		})();
+	</script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Fraunces:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap');
 
 /*
 	Paradigm Shift by HTML5 UP
@@ -169,7 +169,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #000000;
-		font-family: "Arial", Helvetica, sans-serif;
+		font-family: "Source Serif 4", Georgia, "Times New Roman", Times, serif;
 		font-size: 1rem;
 		font-weight: 300;
 		letter-spacing: 0.0375em;
@@ -206,12 +206,12 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #000000;
-		font-family: "League Spartan", Helvetica, sans-serif;
+		font-family: "Fraunces", Georgia, "Times New Roman", Times, serif;
 		font-weight: 600;
-		letter-spacing: 0.175em;
-		line-height: 1.75;
+		letter-spacing: -0.02em;
+		line-height: 1.2;
 		margin: 0 0 1.5rem 0;
-		text-transform: uppercase;
+		text-transform: none;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -220,9 +220,9 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-family: "League Spartan", Helvetica, sans-serif;
+		font-family: "Fraunces", Georgia, "Times New Roman", Times, serif;
 		font-size: 5rem;
-		font-weight: 700;
+		font-weight: 600;
 		letter-spacing: -0.05em;
 		line-height: 1.1;
 		margin: 0 0 1.5rem 0;
@@ -231,7 +231,7 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.25rem;
-		font-weight: 800;
+		font-weight: 600;
 		margin: 0 0 2rem 0;
 	}
 
@@ -323,7 +323,7 @@ input, select, textarea {
 	code {
 		background: rgba(144, 144, 144, 0.1);
 		border-radius: 0.325rem;
-		font-family: "Courier New", monospace;
+		font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 		font-size: 0.9rem;
 		margin: 0 0.25rem;
 		padding: 0.25rem 0.65rem;
@@ -331,7 +331,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 		font-size: 0.9rem;
 		margin: 0 0 2rem 0;
 		width: 100%;
@@ -1851,11 +1851,11 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -1871,18 +1871,18 @@ input, select, textarea {
 		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-family: "Raleway", Helvetica, sans-serif;
-		font-size: 0.6rem;
-		font-weight: 600;
-		height: 3rem;
-		letter-spacing: 0.175em;
-		line-height: 3rem;
-		padding: 0 2rem;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		white-space: nowrap;
-	}
+			font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+			font-size: 0.6rem;
+			font-weight: 500;
+			height: 3rem;
+			letter-spacing: 0.175em;
+			line-height: 3rem;
+			padding: 0 2rem;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2147,9 +2147,9 @@ input, select, textarea {
 	label {
 		color: #000000;
 		display: block;
-		font-family: "Raleway", Helvetica, sans-serif;
+		font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 		font-size: 0.75rem;
-		font-weight: 600;
+		font-weight: 500;
 		letter-spacing: 0.175em;
 		line-height: 1.75;
 		margin: 0 0 1rem 0;
@@ -2206,21 +2206,21 @@ input, select, textarea {
 		z-index: -1;
 	}
 
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
+			input[type="checkbox"] + label,
+			input[type="radio"] + label {
 			text-decoration: none;
 			color: #000000;
 			cursor: pointer;
 			display: inline-block;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 1rem;
-			font-weight: 300;
-			letter-spacing: 0.0375em;
-			padding-left: 2.675rem;
-			padding-right: 0.875rem;
-			position: relative;
-			text-transform: none;
-		}
+				font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+				font-size: 1rem;
+				font-weight: 300;
+				letter-spacing: 0.0375em;
+				padding-left: 2.675rem;
+				padding-right: 0.875rem;
+				position: relative;
+				text-transform: none;
+			}
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
@@ -3269,13 +3269,13 @@ input, select, textarea {
 					margin: 0 0 5rem 0;
 				}
 
-				#wrapper section > header h1 + p {
-					font-family: "Raleway", Helvetica, sans-serif;
-					font-size: 0.8rem;
-					letter-spacing: 0.175em;
-					line-height: 2.5;
-					text-transform: uppercase;
-				}
+					#wrapper section > header h1 + p {
+						font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+						font-size: 0.8rem;
+						letter-spacing: 0.175em;
+						line-height: 2.5;
+						text-transform: uppercase;
+					}
 
 				#wrapper section > header ul.actions {
 					justify-content: flex-end;

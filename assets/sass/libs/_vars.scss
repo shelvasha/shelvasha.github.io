@@ -23,15 +23,15 @@
 		gallery-gutter:			1.25rem,
 	);
 
-// Font.
+	// Font.
 	$font: (
-		family:					('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:			('Courier New', monospace),
-		family-heading:			('League Spartan', Helvetica, sans-serif),
+		family:					('Source Serif 4', Georgia, 'Times New Roman', Times, serif),
+		family-fixed:			('DM Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace),
+		family-heading:			('Fraunces', Georgia, 'Times New Roman', Times, serif),
 		weight:					300,
 		weight-bold:			600,
 		weight-extrabold:		700,
-		weight-heading:			800,
+		weight-heading:			600,
 		weight-heading-light:	600,
 		kerning:				0.0375em,
 		kerning-heading:		0.175em,

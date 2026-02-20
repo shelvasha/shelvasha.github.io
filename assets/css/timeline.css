@@ -2,34 +2,44 @@
   timeline.css — Horizontal career timeline
   Design tokens mirrored from shelvasha.github.io/meridian/
   ──────────────────────────────────────────────────────────
-  --bg        #0d0d08   near-black, olive-tinted
-  --surface   #18180e   card surface
-  --surface-2 #232319   elevated / hover
-  --ink       #e2ddc8   warm cream
-  --ink-mid   #96907a   mid warm
-  --ink-soft  #5c5a48   muted warm
-  --olive     #b2b218   EVOO (bright on dark)
-  --lemon     #d4c41e   Amalfi Lemon
-  --basil     #5a8220   Large Leaf Basil
-  --rule      rgba(226,221,200,0.09)
+  Updated to the @sheljustdoes palette (cream/parchment base with
+  indigo/terracotta/amber accents) and a sans-first type system.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap');
 
 /* ── Variables ─────────────────────────────────────── */
 :root {
-  --bg:       #0d0d08;
-  --surface:  #18180e;
-  --surface-2:#232319;
-  --ink:      #e2ddc8;
-  --ink-mid:  #96907a;
-  --ink-soft: #5c5a48;
-  --olive:    #b2b218;
-  --lemon:    #d4c41e;
-  --basil:    #5a8220;
-  --rule:     rgba(226, 221, 200, 0.09);
-  --sans:     'DM Sans', sans-serif;
-  --mono:     'DM Mono', monospace;
+  /* Brand palette (from sheljustdoes-brand-system.html) */
+  --cream:      #f5f1eb;
+  --parchment:  #eae4d9;
+  --warm-taupe: #c8bfb0;
+  --charcoal:   #1e1c1a;
+  --near-black: #141210;
+
+  --terracotta: #d4603a;
+  --amber:      #e8a830;
+  --blush:      #e8b4a2;
+  --indigo:     #3a4d8f;
+  --forest:     #2e5a45;
+  --dusty-blue: #7a8fb5;
+
+  /* Semantic */
+  --bg:        var(--cream);
+  --surface:   var(--parchment);
+  --surface-2: #fbf9f5;
+  --ink:       var(--charcoal);
+  --ink-mid:   rgba(30, 28, 26, 0.72);
+  --ink-soft:  rgba(30, 28, 26, 0.52);
+  --rule:      rgba(30, 28, 26, 0.14);
+
+  --primary:   var(--indigo);
+  --highlight: var(--terracotta);
+
+  --display: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
+  --sans: 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
 }
 
 /* ── Reset ─────────────────────────────────────────── */
@@ -46,8 +56,8 @@ html, body {
   overflow-y: hidden;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--mono);
-  font-size: 13px;
+  font-family: var(--sans);
+  font-size: 14px;
   -webkit-text-size-adjust: none;
 }
 
@@ -71,13 +81,13 @@ html, body {
   position: sticky;
   left: 0;
   z-index: 10;
-  background: var(--bg);
+  background: #f7f3ee;
 }
 
 .intro-panel h1 {
-  font-family: var(--sans);
+  font-family: var(--display);
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
   letter-spacing: -0.04em;
   color: var(--ink);
@@ -88,7 +98,7 @@ html, body {
   font-size: 0.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--olive);
+  color: var(--highlight);
   line-height: 1.6;
 }
 
@@ -107,7 +117,7 @@ html, body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 1px solid rgba(226, 221, 200, 0.15);
+  border: 1px solid var(--rule);
   color: var(--ink-mid);
   font-size: 0.78rem;
   text-decoration: none;
@@ -115,8 +125,8 @@ html, body {
 }
 
 .social-icons a:hover {
-  border-color: var(--olive);
-  color: var(--olive);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 /* ── Timeline scroll wrapper ───────────────────────── */
@@ -145,7 +155,7 @@ html, body {
   left: 0;
   right: 2rem;
   height: 1px;
-  background: rgba(226, 221, 200, 0.18);
+  background: rgba(30, 28, 26, 0.16);
   transform: translateY(-50%);
   z-index: 0;
 }
@@ -160,7 +170,7 @@ html, body {
   height: 0;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-  border-left: 11px solid rgba(226, 221, 200, 0.18);
+  border-left: 11px solid rgba(30, 28, 26, 0.16);
   z-index: 1;
 }
 
@@ -200,7 +210,7 @@ html, body {
 .connector {
   width: 1px;
   flex: 0 0 2rem;
-  border-left: 1px dashed rgba(226, 221, 200, 0.12);
+  border-left: 1px dashed rgba(30, 28, 26, 0.12);
 }
 
 /* ── Dot on axis ───────────────────────────────────── */
@@ -208,7 +218,7 @@ html, body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--dot-color, var(--ink-soft));
+  background: var(--dot-color, var(--warm-taupe));
   flex-shrink: 0;
   z-index: 2;
 }
@@ -221,6 +231,7 @@ html, body {
   line-height: 1.55;
   text-align: center;
   max-width: 175px;
+  border: 1px solid rgba(30, 28, 26, 0.12);
 }
 
 .event-card .date {
@@ -280,8 +291,8 @@ a.event-link .event-card {
 
 a.event-link:hover .event-card {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-  outline-color: rgba(226, 221, 200, 0.15);
+  box-shadow: 0 10px 30px rgba(20, 18, 16, 0.18);
+  outline-color: rgba(30, 28, 26, 0.16);
 }
 
 a.event-link:hover .event-text .date {
@@ -292,7 +303,7 @@ a.event-link:hover .event-text .label {
   color: var(--ink);
   text-decoration: underline;
   text-underline-offset: 2px;
-  text-decoration-color: var(--olive);
+  text-decoration-color: var(--highlight);
 }
 
 /* External link indicator ↗ */

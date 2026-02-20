@@ -6,7 +6,7 @@
   indigo/terracotta/amber accents) and a sans-first type system.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Fraunces:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap');
 
 /* ── Variables ─────────────────────────────────────── */
 :root {
@@ -36,9 +36,8 @@
   --primary:   var(--indigo);
   --highlight: var(--terracotta);
 
-  --display: 'Fraunces', Georgia, 'Times New Roman', Times, serif;
-  --body: 'Source Serif 4', Georgia, 'Times New Roman', Times, serif;
-  --sans: 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --display: 'Outfit', sans-serif;
+  --body: 'Lora', Georgia, 'Times New Roman', Times, serif;
   --mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
 }
@@ -342,7 +341,7 @@ html, body {
 
 .event-card .label {
   display: block;
-  font-family: var(--sans);
+  font-family: var(--display);
   font-size: 0.76rem;
   font-weight: 500;
   letter-spacing: 0.01em;

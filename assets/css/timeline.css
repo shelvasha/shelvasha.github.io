@@ -208,9 +208,9 @@ html, body {
 /* ── Timeline track ────────────────────────────────── */
 .timeline-track {
   position: relative;
+  height: 100%;
   display: flex;
   align-items: center;
-  height: 100%;
   padding: 0 5rem 0 4rem;
 }
 
@@ -247,9 +247,8 @@ html, body {
   flex-direction: column;
   align-items: center;
   width: 190px;
-  flex-shrink: 0;
   height: 100%;
-  position: relative;
+  flex-shrink: 0;
   z-index: 1;
 }
 
@@ -276,8 +275,8 @@ html, body {
   outline-offset: 3px;
 }
 
-.event-col.is-selected .event-card,
-.event-col.is-selected .event-text {
+.event-card.is-selected,
+.event-text.is-selected {
   outline: 2px solid rgba(58, 77, 143, 0.35);
   outline-offset: 3px;
 }

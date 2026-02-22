@@ -22,7 +22,7 @@
 					   title="LinkedIn" aria-label="LinkedIn"></a>
 				</li>
 				<li>
-					<a href="https://github.com/shelvasha"
+					<a href="https://github.com/sheljustdoes"
 					   class="icon brands fa-github"
 					   title="GitHub" aria-label="GitHub"></a>
 				</li>
@@ -36,6 +36,9 @@
 				<h2 class="details-title">Click an event</h2>
 				<p class="details-date"></p>
 				<p class="details-summary">Click a career/education event to see a short summary here.</p>
+				<div class="details-scores" hidden></div>
+				<div class="details-tags" hidden></div>
+				<a class="details-link" href="#" target="_blank" rel="noopener" hidden>Open link ↗</a>
 			</div>
 		</div>
 
@@ -57,7 +60,7 @@
 				-->
 
 				<!-- BS Biology (above — education) — amber -->
-				<div class="event-col" data-title="BS Biology — UNCC" data-date="2013" data-summary="Foundation in biology and scientific method at UNC Charlotte, building the analytical mindset that would drive a career at the intersection of computation and life science.">
+				<div class="event-col" data-kind="role" data-title="BS Biology — UNCC" data-date="2013" data-summary="Foundation in biology and scientific method at UNC Charlotte, building the analytical mindset that would drive a career at the intersection of computation and life science.">
 					<div class="above">
 						<button type="button" class="event-trigger" aria-expanded="false">
 							<div class="event-text">
@@ -73,7 +76,7 @@
 				</div>
 
 				<!-- MS Bioinformatics (above — education) — parchment -->
-				<div class="event-col" data-title="MS Bioinformatics — UNCC" data-date="2016" data-summary="Graduate training in bioinformatics and data science at UNC Charlotte, developing core skills in statistical modeling, computational methods, and large-scale biological data analysis.">
+				<div class="event-col" data-kind="role" data-title="MS Bioinformatics — UNCC" data-date="2016" data-summary="Graduate training in bioinformatics and data science at UNC Charlotte, developing core skills in statistical modeling, computational methods, and large-scale biological data analysis.">
 					<div class="above">
 						<button type="button" class="event-trigger" aria-expanded="false">
 							<div class="event-text">
@@ -89,11 +92,11 @@
 				</div>
 
 				<!-- Graduate Researcher (above — education) -->
-				<div class="event-col" data-title="Graduate Researcher & Teaching Assistant — UNCC" data-date="2017–2020" data-summary="Designed and deployed real-time bioinformatics pipelines for large-scale genomic annotation (Illumina/PacBio) in Python on Linux/HPC. Taught bioinformatics courses and mentored students on computational methods and data analysis workflows.">
+					<div class="event-col" data-kind="role" data-title="Graduate Researcher & Teaching Assistant — UNCC" data-date="2017–2020" data-summary="Designed and deployed real-time bioinformatics pipelines for large-scale genomic annotation (Illumina/PacBio) in Python on Linux/HPC. Taught bioinformatics courses and mentored students on computational methods and data analysis workflows.">
 					<div class="above">
 						<button type="button" class="event-trigger" aria-expanded="false">
 							<div class="event-card" style="
-								--card-color: #c8bfb0;
+								--card-color: var(--g-8);
 								--card-text:  rgba(30,28,26,0.9);
 								--card-date:  rgba(30,28,26,0.55);">
 								<span class="date">2017–20</span>
@@ -102,13 +105,13 @@
 						</button>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#c8bfb0"></div>
+					<div class="dot" style="--dot-color:var(--g-6)"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
 
 				<!-- PhD (above — education) — indigo -->
-				<div class="event-col" data-title="PhD Bioinformatics — UNCC" data-date="2020" data-summary="Dissertation: Novel Computational Methods for Repetitive Element Classification in Genomic Data. Developed RepBox, a pipeline that improved repetitive element identification by 7% — later published in BMC Bioinformatics (2023).">
+				<div class="event-col" data-kind="role" data-title="PhD Bioinformatics — UNCC" data-date="2020" data-summary="Curriculum centered on data science for biology: statistics/mathematics as the applied foundation for modeling and inference, combined with computer science for scalable computation and modern biology for domain grounding. Advanced coursework and seminars paired with mentored research, culminating in original dissertation work on computational methods for large-scale genomic data.">
 					<div class="above">
 						<button type="button" class="event-trigger" aria-expanded="false">
 							<div class="event-text">
@@ -119,59 +122,73 @@
 					</div>
 					<div class="connector"></div>
 					<div class="dot"></div>
-					<div class="connector"></div>
-					<div class="below">
-						<div class="event-card" style="
-							--card-color: #ddd8d0;
-							--card-text:  rgba(30,28,26,0.9);
-							--card-date:  rgba(30,28,26,0.55);">
-							<span class="date">Thesis Defense</span>
-							<span class="label">Comparative Analysis of<br>Repeat Landscapes<br>in Avena (Oat)</span>
+						<div class="connector"></div>
+						<div class="below">
+							<button type="button" class="event-trigger" aria-expanded="false"
+								data-kind="role"
+								data-title="Thesis Defense"
+								data-date="2020"
+								data-summary="PhD thesis on common oat (Avena sativa) genomics, focused on the challenges of a large, repeat-rich allohexaploid genome. Developed a pipeline to more precisely characterize repetitive elements using well-characterized diploid Avena references, then extended the work with phylogenetic analyses to better understand transposable element evolution across the Avena lineage.">
+								<div class="event-card" style="
+									--card-color: var(--g-8);
+									--card-text:  rgba(30,28,26,0.9);
+									--card-date:  rgba(30,28,26,0.55);">
+									<span class="date">Thesis Defense</span>
+									<span class="label">Comparative Analysis of<br>Repeat Landscapes<br>in Avena (Oat)</span>
+								</div>
+							</button>
 						</div>
 					</div>
-				</div>
 
 				<!-- Postdoc (above — education) — dusty-blue -->
-				<div class="event-col" data-title="Postdoctoral Researcher — NC Research Campus" data-date="2020–2021" data-summary="Built analytical pipelines for large-scale NGS datasets in Python on cloud/HPC environments. Led computational biology projects applying ML to protein sequence analysis, structure annotation, and optimization workflows.">
+				<div class="event-col" data-kind="role" data-title="Postdoctoral Researcher — NC Research Campus" data-date="2020–2021" data-summary="Built analytical pipelines for large-scale NGS datasets in Python on cloud/HPC environments. Led computational biology projects applying ML to protein sequence analysis, structure annotation, and optimization workflows.">
 					<div class="above">
 						<button type="button" class="event-trigger" aria-expanded="false">
-							<div class="event-card" style="--card-color:#7a8fb5;">
+							<div class="event-card" style="--card-color:var(--g-7);">
 								<span class="date">2020–21</span>
 								<span class="label">Postdoctoral<br>Researcher<br>NC Research Campus</span>
 							</div>
 						</button>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#7a8fb5"></div>
+					<div class="dot" style="--dot-color:var(--g-7)"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
 
-				<!-- RepBox (below — body of work) — indigo -->
-				<div class="event-col">
-					<div class="above"></div>
-					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#9ab5d0"></div>
-					<div class="connector"></div>
-					<div class="below">
-						<a href="https://doi.org/10.1186/s12859-023-05419-5" target="_blank" rel="noopener" class="event-link">
-							<div class="event-card" style="
-								--card-color: #9ab5d0;
-								--card-text:  rgba(30,28,26,0.9);
-								--card-date:  rgba(30,28,26,0.55);">
-								<span class="date">Submitted 2021 · pub. (2023)</span>
-								<span class="label">RepBox<br>BMC Bioinformatics<br>Publication</span>
-							</div>
-						</a>
+					<!-- RepBox (below — project/publication) -->
+					<div class="event-col" data-kind="project">
+						<div class="above"></div>
+						<div class="connector"></div>
+						<div class="dot" style="--dot-color:var(--dusty-blue)"></div>
+						<div class="connector"></div>
+						<div class="below">
+								<button type="button" class="event-trigger" aria-expanded="false"
+									data-kind="project"
+									data-title="RepBox"
+									data-date="Submitted 2021 · Published 2023"
+									data-ai="1"
+									data-complexity="4"
+									data-tags="python, bioinformatics, pipeline, genomics, transposable-elements, plant-genomics"
+									data-summary="RepBox: a bioinformatics pipeline for improved repetitive element identification. Published in BMC Bioinformatics (2023)."
+									data-link="https://doi.org/10.1186/s12859-023-05419-5">
+									<div class="event-card" style="
+										--card-color: var(--dusty-blue);
+									--card-text:  rgba(245,241,235,0.92);
+									--card-date:  rgba(245,241,235,0.7);">
+									<span class="date">Submitted 2021 · pub. (2023)</span>
+									<span class="label">RepBox<br>BMC Bioinformatics<br>Publication</span>
+								</div>
+							</button>
+						</div>
 					</div>
-				</div>
 
 				<!-- Syngenta (above — work experience) — forest -->
-				<div class="event-col" data-title="Data Scientist — Syngenta" data-date="2021–2022" data-summary="Developed predictive models for agricultural product optimization using haplotype and environmental data. Launched a decision-making analytics platform as Product Owner (Agile/Scrum) and built scalable bioinformatics pipelines for experimental data integration.">
+				<div class="event-col" data-kind="role" data-title="Data Scientist — Syngenta" data-date="2021–2022" data-summary="Developed predictive models for agricultural product optimization using haplotype and environmental data. Launched a decision-making analytics platform as Product Owner (Agile/Scrum) and built scalable bioinformatics pipelines for experimental data integration.">
 					<div class="above">
 						<button type="button" class="event-trigger" aria-expanded="false">
 							<div class="event-card" style="
-								--card-color: #e8a830;
+								--card-color: var(--g-7);
 								--card-text:  rgba(30,28,26,0.9);
 								--card-date:  rgba(30,28,26,0.55);">
 								<span class="date">2021–22</span>
@@ -180,87 +197,114 @@
 						</button>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#e8a830"></div>
+					<div class="dot" style="--dot-color:var(--g-7)"></div>
 					<div class="connector"></div>
 					<div class="below"></div>
 				</div>
 
-				<!-- FitSkin (above — work experience) + argus. (below — body of work) -->
-				<div class="event-col" data-title="Sr. Data Scientist — FitSkin" data-date="2021–2025" data-summary="Built production ML systems including a clinical imaging anomaly detection pipeline (AWS SageMaker) and a patentable skin tone classification system using Vision Transformers. Led A/B testing and causal inference initiatives, customer segmentation, and executive-facing analytics dashboards.">
+					<!-- FitSkin (above — work experience) -->
+				<div class="event-col" data-kind="role" data-title="Sr. Data Scientist — FitSkin" data-date="2021–2025" data-summary="Built production ML systems including a clinical imaging anomaly detection pipeline (AWS SageMaker) and a patentable skin tone classification system using Vision Transformers. Led A/B testing and causal inference initiatives, customer segmentation, and executive-facing analytics dashboards.">
 					<div class="above">
 						<button type="button" class="event-trigger" aria-expanded="false">
 							<div class="event-card" style="
-								--card-color: #d4603a;
-								--card-text:  rgba(245,241,235,0.92);
-								--card-date:  rgba(245,241,235,0.7);">
+								--card-color: var(--g-6);
+								--card-text:  rgba(30,28,26,0.9);
+								--card-date:  rgba(30,28,26,0.55);">
 								<span class="date">2021–25</span>
 								<span class="label">Sr. Data Scientist<br>FitSkin</span>
 							</div>
 						</button>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#d4603a"></div>
+					<div class="dot" style="--dot-color:var(--g-6)"></div>
 					<div class="connector"></div>
-					<div class="below">
-						<a href="https://github.com/shelvasha" target="_blank" rel="noopener" class="event-link">
-							<div class="event-card" style="
-								--card-color: #c97a58;
-								--card-text:  rgba(30,28,26,0.9);
-								--card-date:  rgba(30,28,26,0.55);">
-								<span class="date">2022</span>
-								<span class="label">argus.<br>Clinical Imaging QC<br>AWS SageMaker</span>
-							</div>
-						</a>
-					</div>
+					<div class="below"></div>
 				</div>
 
-				<!-- iridis. (below — body of work) — amber -->
-				<div class="event-col">
-					<div class="above"></div>
-					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#d4956a"></div>
-					<div class="connector"></div>
-					<div class="below">
-						<a href="https://github.com/shelvasha" target="_blank" rel="noopener" class="event-link">
-							<div class="event-card" style="
-								--card-color: #d4956a;
-								--card-text:  rgba(30,28,26,0.9);
-								--card-date:  rgba(30,28,26,0.55);">
-								<span class="date">2024</span>
-								<span class="label">iridis.<br>Skin Tone Classification<br>Perceptual Clustering</span>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- lambent. (below — body of work) — FitSkin terracotta family -->
-			<div class="event-col"
-				data-title="lambent."
-				data-date="2024–2025"
-				data-summary="Soft light radiance qualification system developed at FitSkin. Quantifies skin luminosity and surface light diffusion from imaging data to assess radiance quality. Built to support product efficacy validation and clinical evaluation workflows.">
-				<div class="above"></div>
-				<div class="connector"></div>
-				<div class="dot" style="--dot-color:#dcad8a"></div>
-				<div class="connector"></div>
-				<div class="below">
-					<a href="https://github.com/shelvasha" target="_blank" rel="noopener" class="event-link">
-						<div class="event-card event-trigger" style="
-							--card-color: #dcad8a;
-							--card-text:  rgba(30,28,26,0.9);
-							--card-date:  rgba(30,28,26,0.55);">
-							<span class="date">2024–25</span>
-							<span class="label">lambent.<br>Soft Light<br>Radiance Qualification</span>
+					<!-- argus. (below — project) -->
+					<div class="event-col" data-kind="project">
+						<div class="above"></div>
+						<div class="connector"></div>
+						<div class="dot" style="--dot-color:var(--g-5)"></div>
+						<div class="connector"></div>
+						<div class="below">
+								<button type="button" class="event-trigger" aria-expanded="false"
+								data-kind="project"
+								data-title="argus."
+								data-date="2022–2023"
+								data-ai="5"
+								data-complexity="4"
+								data-tags="cnn, computer-vision, anomaly-detection, aws-sagemaker"
+								data-summary="Clinical imaging anomaly detection pipeline built around a convolutional neural network (CNN) trained on a broad set of non-anomalous images to learn normal patterns and flag anomalous captures before they enter downstream analysis workflows.">
+								<div class="event-card" style="
+									--card-color: var(--g-5);
+									--card-text:  rgba(245,241,235,0.92);
+									--card-date:  rgba(245,241,235,0.7);">
+									<span class="date">2022–23</span>
+									<span class="label">argus.<br>Clinical Imaging QC<br>AWS SageMaker</span>
+									</div>
+								</button>
 						</div>
-					</a>
-				</div>
-			</div>
+					</div>
 
-			<!-- Boehringer Ingelheim (above — work experience) + veridian. (below — body of work) -->
-				<div class="event-col" data-title="Principal Applied Scientist — Boehringer Ingelheim" data-date="2025–Now" data-summary="Leads AI strategy and generative AI development for pharmaceutical operations across the Global Animal Health division. Builds financial models, champions responsible AI practices, and mentors junior data scientists.">
+					<!-- iridis. (below — project) -->
+					<div class="event-col" data-kind="project">
+						<div class="above"></div>
+						<div class="connector"></div>
+						<div class="dot" style="--dot-color:var(--g-7)"></div>
+						<div class="connector"></div>
+						<div class="below">
+								<button type="button" class="event-trigger" aria-expanded="false"
+									data-kind="project"
+									data-title="iridis."
+									data-date="2024"
+									data-ai="5"
+									data-complexity="4"
+									data-tags="vision-transformers, computer-vision, clustering"
+									data-summary="Skin tone classification system using Vision Transformers and perceptual clustering. Produced a patentable approach to categorizing skin tone from clinical imaging data across diverse populations.">
+									<div class="event-card" style="
+										--card-color: var(--g-7);
+									--card-text:  rgba(30,28,26,0.9);
+									--card-date:  rgba(30,28,26,0.55);">
+									<span class="date">2024</span>
+									<span class="label">iridis.<br>Skin Tone Classification<br>Perceptual Clustering</span>
+								</div>
+							</button>
+						</div>
+					</div>
+
+					<!-- lambent. (below — project) -->
+					<div class="event-col" data-kind="project">
+						<div class="above"></div>
+						<div class="connector"></div>
+						<div class="dot" style="--dot-color:var(--g-8)"></div>
+						<div class="connector"></div>
+						<div class="below">
+								<button type="button" class="event-trigger" aria-expanded="false"
+									data-kind="project"
+									data-title="lambent."
+									data-date="2025"
+									data-ai="3"
+									data-complexity="3"
+									data-tags="ml, data-science, imaging, measurement"
+									data-summary="Soft light radiance qualification system using ML/data science to quantify skin luminosity and surface light diffusion from imaging data, supporting efficacy validation and clinical evaluation workflows.">
+									<div class="event-card" style="
+										--card-color: var(--g-8);
+										--card-text:  rgba(30,28,26,0.9);
+										--card-date:  rgba(30,28,26,0.55);">
+									<span class="date">2025</span>
+									<span class="label">lambent.<br>Soft Light<br>Radiance Qualification</span>
+									</div>
+								</button>
+						</div>
+					</div>
+
+					<!-- Boehringer Ingelheim (above — work experience) -->
+				<div class="event-col" data-kind="role" data-title="Principal Applied Scientist — Boehringer Ingelheim" data-date="2025–Now" data-summary="Leads AI strategy and generative AI development for pharmaceutical operations across the Global Animal Health division. Builds financial models, champions responsible AI practices, and mentors junior data scientists.">
 					<div class="above">
 						<button type="button" class="event-trigger" aria-expanded="false">
 							<div class="event-card" style="
-								--card-color: #2e5a45;
+								--card-color: var(--g-4);
 								--card-text:  rgba(245,241,235,0.92);
 								--card-date:  rgba(245,241,235,0.7);">
 								<span class="date">2025–Now</span>
@@ -269,62 +313,134 @@
 						</button>
 					</div>
 					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#2e5a45"></div>
+					<div class="dot" style="--dot-color:var(--g-4)"></div>
 					<div class="connector"></div>
-					<div class="below">
-						<button type="button" class="event-trigger" aria-expanded="false"
-							data-title="veridian. — Misinformation Detection"
-							data-date="2025"
-							data-summary="Misinformation detection proof-of-concept for pharmaceutical brand monitoring. Internal drug facts and product information were semantically clustered using an LLM to establish meaningful word associations across the company's portfolio. Those clusters were then used to query public web content, with sentiment analysis applied to the results to surface how the public perceives the company's key drug terminology. Not yet in production.">
-							<div class="event-card" style="
-								--card-color: #4a8a6a;
-								--card-text:  rgba(245,241,235,0.92);
-								--card-date:  rgba(245,241,235,0.7);">
-								<span class="date">2025</span>
-								<span class="label">veridian.<br>Misinformation Detection<br>LLM · Semantic Clustering</span>
+					<div class="below"></div>
+				</div>
+
+					<!-- lattice. (below — project) -->
+					<div class="event-col" data-kind="project">
+						<div class="above"></div>
+						<div class="connector"></div>
+						<div class="dot" style="--dot-color:var(--g-3)"></div>
+						<div class="connector"></div>
+						<div class="below">
+							<button type="button" class="event-trigger" aria-expanded="false"
+								data-kind="project"
+								data-title="lattice. — Misinformation Detection"
+								data-date="2025"
+								data-ai="5"
+								data-complexity="4"
+								data-tags="llm, semantic-clustering, sentiment-analysis, monitoring"
+								data-summary="Misinformation detection proof-of-concept for brand monitoring. Curated reference facts and terminology were semantically clustered with an LLM to build concept groups, then used to query public web content; sentiment analysis surfaced how key terms are used and perceived. Not yet in production.">
+								<div class="event-card" style="
+									--card-color: var(--g-3);
+									--card-text:  rgba(245,241,235,0.92);
+									--card-date:  rgba(245,241,235,0.7);">
+									<span class="date">2025</span>
+									<span class="label">lattice.<br>Misinformation Detection<br>LLM · Semantic Clustering</span>
+								</div>
+							</button>
+						</div>
+					</div>
+
+
+						<!-- topos. + case studies branch tree (below — body of work) -->
+						<div class="event-col" style="width: 420px;" data-kind="project">
+						<div class="above"></div>
+						<div class="connector"></div>
+						<div class="dot" style="--dot-color:var(--indigo)"></div>
+						<div class="connector"></div>
+						<div class="below">
+							<div class="branch-tree">
+									<button type="button" class="event-trigger" aria-expanded="false"
+										data-kind="project"
+										data-title="topos."
+									data-date="2025–"
+										data-ai="4"
+										data-complexity="5"
+										data-tags="framework, manifold-learning, foundation-models, ai-augmented-discovery"
+										data-summary="Stability-first framework for AI-augmented discovery in high-dimensional biological data. Formalizes latent structure discovery with rigorous stability testing, explicit go/kill criteria, cross-modal validation, and evidence-gated escalation. Integrates nonlinear manifold learning, density clustering, robustness stress testing, and conditional genomic foundation model embeddings. Case studies: glyma. (soybean) and fragaria. (octoploid strawberry)."
+										data-link="https://github.com/sheljustdoes/topos">
+									<div class="event-card" style="
+										--card-color: var(--indigo);
+										--card-text:  rgba(245,241,235,0.92);
+										--card-date:  rgba(245,241,235,0.7);">
+										<span class="date">2025–</span>
+										<span class="label">topos.<br>Stability-First<br>Discovery Framework</span>
+								</div>
+							</button>
+							<div class="branch-stem"></div>
+							<div class="branch-children">
+								<div class="branch-child">
+											<button type="button" class="event-trigger" aria-expanded="false"
+												data-kind="project"
+												data-title="glyma."
+												data-date="2026–"
+												data-ai="4"
+												data-complexity="5"
+												data-tags="bioinformatics, genomics, population-genetics, manifold-learning, umap, soybean"
+												data-summary="Haplogroup discovery in soybean germplasm (Glycine max). Tests whether nonlinear manifold learning — UMAP, UMATO, MAPLE — reveals stable haplogroup substructure beyond PCA, using density clustering on LD-pruned SNP-array data. Cluster-defining loci evaluated in genomic foundation model embedding space (DNABERT-2, Nucleotide Transformer, HyenaDNA) for cross-modal agreement. Evidence-gated go/kill validation across phenotype and environmental metadata. A topos. case study."
+												data-link="https://github.com/sheljustdoes/glyma">
+												<div class="event-card" style="
+												--card-color: var(--forest);
+												--card-text:  rgba(245,241,235,0.92);
+												--card-date:  rgba(245,241,235,0.7);">
+												<span class="date">2026–</span>
+												<span class="label">glyma.<br>Soybean Haplogroup<br>Discovery</span>
+											</div>
+										</button>
+									</div>
+								<div class="branch-child">
+											<button type="button" class="event-trigger" aria-expanded="false"
+												data-kind="project"
+												data-title="fragaria."
+												data-date="2026–"
+												data-ai="4"
+												data-complexity="5"
+												data-tags="bioinformatics, genomics, population-genetics, manifold-learning, umap, strawberry"
+												data-summary="Nonlinear haplotype topology discovery in octoploid strawberry (Fragaria × ananassa). Tests whether manifold learning reveals stable haplogroup structure beyond PCA and standard admixture methods in this polyploid system, with cross-modal validation against phenotype, geography, subgenome composition, and disease resistance data. Cluster-defining loci evaluated in genomic foundation model embedding space. A topos. case study."
+												data-link="https://github.com/sheljustdoes/fragaria">
+												<div class="event-card" style="
+												--card-color: var(--terracotta);
+												--card-text:  rgba(245,241,235,0.92);
+												--card-date:  rgba(245,241,235,0.7);">
+												<span class="date">2026–</span>
+												<span class="label">fragaria.<br>Octoploid Strawberry<br>Manifold Genomics</span>
+											</div>
+										</button>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+					<!-- scintilla. (below — body of work) — plum -->
+						<div class="event-col" data-kind="project">
+							<div class="above"></div>
+							<div class="connector"></div>
+							<div class="dot" style="--dot-color:var(--amber)"></div>
+							<div class="connector"></div>
+							<div class="below">
+								<button type="button" class="event-trigger" aria-expanded="false"
+									data-kind="project"
+									data-title="scintilla."
+								data-date="2026"
+									data-topic="ai"
+									data-ai="3"
+									data-complexity="4"
+									data-tags="machine-learning, deep-learning, transformers, skill-tree, self-directed-learning"
+								data-summary="Applied Scientist curriculum: a structured learning path and reference set for applied research, experimentation, and production ML."
+								data-link="https://github.com/sheljustdoes/scintilla">
+								<div class="event-card" style="
+									--card-color: var(--amber);
+									--card-text:  rgba(30,28,26,0.9);
+									--card-date:  rgba(30,28,26,0.55);">
+									<span class="date">2026</span>
+									<span class="label">scintilla.<br>Applied Scientist<br>Curriculum</span>
 							</div>
 						</button>
-					</div>
-				</div>
-
-				<!-- scintilla. (below — body of work) — plum -->
-				<div class="event-col">
-					<div class="above"></div>
-					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#6b4c7a"></div>
-					<div class="connector" style="flex-basis: 5rem;"></div>
-					<div class="below">
-						<a href="https://shelvasha.github.io/meridian/" target="_blank" rel="noopener" class="event-link">
-							<div class="event-card" style="
-								--card-color: #6b4c7a;
-								--card-text:  rgba(245,241,235,0.92);
-								--card-date:  rgba(245,241,235,0.7);">
-								<span class="date">2026</span>
-								<span class="label">scintilla.<br>Applied Scientist<br>Curriculum</span>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- glyma. (below — body of work) — plum -->
-				<div class="event-col"
-					data-title="glyma."
-					data-date="2025–"
-					data-summary="Haplogroup discovery framework for soybean germplasm (Glycine max). Tests whether nonlinear manifold learning — UMAP, UMATO, MAPLE — reveals biologically meaningful population structure beyond PCA, using density clustering on LD-pruned SNP data. Cluster-defining loci are evaluated in genomic foundation model embedding space (DNABERT-2, Nucleotide Transformer) to assess cross-modal agreement between genotype topology and sequence representations. Staged go/kill validation against phenotype and environmental metadata.">
-					<div class="above"></div>
-					<div class="connector"></div>
-					<div class="dot" style="--dot-color:#6b4c7a"></div>
-					<div class="connector"></div>
-					<div class="below">
-						<a href="https://github.com/shelvasha" target="_blank" rel="noopener" class="event-link">
-							<div class="event-card event-trigger" style="
-								--card-color: #6b4c7a;
-								--card-text:  rgba(245,241,235,0.92);
-								--card-date:  rgba(245,241,235,0.7);">
-								<span class="date">2025–</span>
-								<span class="label">glyma.<br>Manifold Genomics</span>
-							</div>
-						</a>
 					</div>
 				</div>
 
@@ -343,23 +459,477 @@
 			const detailsPanel = document.getElementById('details-panel');
 			if (!detailsPanel) return;
 
+			const kickerEl  = detailsPanel.querySelector('.details-kicker');
 			const titleEl   = detailsPanel.querySelector('.details-title');
 			const dateEl    = detailsPanel.querySelector('.details-date');
 			const summaryEl = detailsPanel.querySelector('.details-summary');
+			const scoresEl  = detailsPanel.querySelector('.details-scores');
+			const tagsEl    = detailsPanel.querySelector('.details-tags');
+			const linkEl    = detailsPanel.querySelector('.details-link');
 			const clearBtn  = detailsPanel.querySelector('.details-clear');
 
 			// Each trigger can carry its own data-* or inherit from its .event-col.
 			const entries = [];
 			for (const trigger of document.querySelectorAll('.event-trigger')) {
 				const col     = trigger.closest('.event-col');
+				const kindRaw = trigger.dataset.kind || col?.dataset.kind || (trigger.closest('.below') ? 'project' : 'role');
+				const kind    = (kindRaw || 'event').toLowerCase();
 				const title   = trigger.dataset.title   || col?.dataset.title;
 				const date    = trigger.dataset.date    || col?.dataset.date;
 				const summary = trigger.dataset.summary || col?.dataset.summary;
+				const link    = trigger.dataset.link    || null;
+				const linkLabel = trigger.dataset.linkLabel || null;
 				if (!summary) continue;
-				entries.push({ trigger, title, date, summary });
+				entries.push({ trigger, kind, title, date, summary, link, linkLabel });
 			}
 
 			const cardEl = t => t.querySelector('.event-card, .event-text');
+
+			function yearsFromDateText(text) {
+				if (!text) return [];
+				const years = [];
+				const matches = String(text).match(/\b(19|20)\d{2}\b/g);
+				if (!matches) return years;
+				for (const match of matches) years.push(Number(match));
+				return years.filter(Number.isFinite);
+			}
+
+			function clamp(min, x, max) {
+				return Math.min(max, Math.max(min, x));
+			}
+
+			function keywordScore(text, { keywords, maxHits = 6 } = {}) {
+				if (!text) return 0;
+				const t = String(text).toLowerCase();
+				let hits = 0;
+				for (const kw of keywords) {
+					if (t.includes(kw)) hits += 1;
+				}
+				return clamp(0, hits / maxHits, 1);
+			}
+
+			function parseCssColorToRgb(input) {
+				const raw = String(input || '').trim();
+				if (!raw) return null;
+
+				// #rgb / #rrggbb
+				if (raw.startsWith('#')) {
+					const hex = raw.slice(1);
+					if (hex.length === 3) {
+						const r = parseInt(hex[0] + hex[0], 16);
+						const g = parseInt(hex[1] + hex[1], 16);
+						const b = parseInt(hex[2] + hex[2], 16);
+						if ([r, g, b].every(Number.isFinite)) return { r, g, b };
+					}
+					if (hex.length === 6) {
+						const r = parseInt(hex.slice(0, 2), 16);
+						const g = parseInt(hex.slice(2, 4), 16);
+						const b = parseInt(hex.slice(4, 6), 16);
+						if ([r, g, b].every(Number.isFinite)) return { r, g, b };
+					}
+				}
+
+				// rgb()/rgba()
+				const m = raw.match(/^rgba?\((.+)\)$/i);
+				if (m) {
+					const parts = m[1].split(',').map(s => s.trim());
+					if (parts.length >= 3) {
+						const r = Number(parts[0]);
+						const g = Number(parts[1]);
+						const b = Number(parts[2]);
+						if ([r, g, b].every(Number.isFinite)) return { r, g, b };
+					}
+				}
+
+				return null;
+			}
+
+			function resolveColorTokenToRgb(token) {
+				const t = String(token || '').trim();
+				if (!t) return null;
+
+				if (t.startsWith('var(')) {
+					const varName = t.slice(4, -1).trim(); // --amber
+					const value = getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
+					return parseCssColorToRgb(value);
+				}
+				return parseCssColorToRgb(t);
+			}
+
+			function mixRgb(a, b, ratioA = 0.5) {
+				const ra = clamp(0, ratioA, 1);
+				const rb = 1 - ra;
+				return {
+					r: Math.round((a.r * ra) + (b.r * rb)),
+					g: Math.round((a.g * ra) + (b.g * rb)),
+					b: Math.round((a.b * ra) + (b.b * rb)),
+				};
+			}
+
+			function rgbToCss({ r, g, b }) {
+				return `rgb(${r} ${g} ${b})`;
+			}
+
+			function relativeLuminance({ r, g, b }) {
+				const toLinear = v => {
+					const x = v / 255;
+					return x <= 0.04045 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4);
+				};
+				const R = toLinear(r);
+				const G = toLinear(g);
+				const B = toLinear(b);
+				return (0.2126 * R) + (0.7152 * G) + (0.0722 * B);
+			}
+
+			function rgbToHsl({ r, g, b }) {
+				const R = r / 255;
+				const G = g / 255;
+				const B = b / 255;
+				const max = Math.max(R, G, B);
+				const min = Math.min(R, G, B);
+				const delta = max - min;
+
+				let h = 0;
+				let s = 0;
+				const l = (max + min) / 2;
+
+				if (delta !== 0) {
+					s = delta / (1 - Math.abs((2 * l) - 1));
+					switch (max) {
+						case R:
+							h = ((G - B) / delta) % 6;
+							break;
+						case G:
+							h = ((B - R) / delta) + 2;
+							break;
+						default:
+							h = ((R - G) / delta) + 4;
+					}
+					h = h * 60;
+					if (h < 0) h += 360;
+				}
+
+				return { h, s, l };
+			}
+
+			function hslToRgb({ h, s, l }) {
+				const C = (1 - Math.abs((2 * l) - 1)) * s;
+				const hp = (h % 360) / 60;
+				const X = C * (1 - Math.abs((hp % 2) - 1));
+
+				let r1 = 0, g1 = 0, b1 = 0;
+				if (hp >= 0 && hp < 1) [r1, g1, b1] = [C, X, 0];
+				else if (hp >= 1 && hp < 2) [r1, g1, b1] = [X, C, 0];
+				else if (hp >= 2 && hp < 3) [r1, g1, b1] = [0, C, X];
+				else if (hp >= 3 && hp < 4) [r1, g1, b1] = [0, X, C];
+				else if (hp >= 4 && hp < 5) [r1, g1, b1] = [X, 0, C];
+				else [r1, g1, b1] = [C, 0, X];
+
+				const m = l - (C / 2);
+				return {
+					r: Math.round((r1 + m) * 255),
+					g: Math.round((g1 + m) * 255),
+					b: Math.round((b1 + m) * 255),
+				};
+			}
+
+			function desaturateRgb(rgb, factor = 0.5) {
+				const hsl = rgbToHsl(rgb);
+				return hslToRgb({ h: hsl.h, s: clamp(0, hsl.s * factor, 1), l: hsl.l });
+			}
+
+			function pickCardInkForBg(bgToken) {
+				const darkBg = new Set(['var(--g-0)', 'var(--g-1)', 'var(--g-2)', 'var(--g-3)', 'var(--g-4)']);
+				if (darkBg.has(bgToken)) {
+					return {
+						text: 'rgba(245,241,235,0.92)',
+						date: 'rgba(245,241,235,0.7)',
+					};
+				}
+				return {
+					text: 'rgba(30,28,26,0.9)',
+					date: 'rgba(30,28,26,0.55)',
+				};
+			}
+
+			function pickCardInkForBrand(colorToken) {
+				const lightBrand = new Set(['var(--amber)', 'var(--dusty-blue)', 'var(--blush)']);
+				if (lightBrand.has(colorToken)) {
+					return {
+						text: 'rgba(30,28,26,0.9)',
+						date: 'rgba(30,28,26,0.55)',
+					};
+				}
+				return {
+					text: 'rgba(245,241,235,0.92)',
+					date: 'rgba(245,241,235,0.7)',
+				};
+			}
+
+			function applyProjectStyling() {
+				const currentYear = new Date().getFullYear(); // 2026+
+				const recencyWindowYears = 5;
+
+				// Weighting used only to order projects for color assignment and gray ramp.
+				const wRecency = 0.45;
+				const wAi      = 0.35;
+				const wComplex = 0.20;
+
+				const brandPalette = [
+					'var(--amber)',
+					'var(--terracotta)',
+					'var(--indigo)',
+					'var(--forest)',
+					'var(--dusty-blue)',
+					'var(--blush)',
+				];
+
+				const projects = entries
+					.filter(e => e.kind === 'project')
+					.map(e => {
+						const years = yearsFromDateText(e.date);
+						const endYear = years.length ? Math.max(...years) : 0;
+
+						const recency = endYear
+							? clamp(0, (endYear - (currentYear - recencyWindowYears)) / recencyWindowYears, 1)
+							: 0;
+
+						const complexity =
+							e.trigger.dataset.complexity
+								? clamp(0, Number(e.trigger.dataset.complexity) / 5, 1)
+								: clamp(0, (String(e.summary || '').split(/\s+/).filter(Boolean).length / 60), 1);
+
+						const ai =
+							e.trigger.dataset.ai
+								? clamp(0, Number(e.trigger.dataset.ai) / 5, 1)
+								: keywordScore(e.summary, {
+									keywords: [
+										'llm',
+										'transformer',
+										'vision',
+										'genai',
+										'generative',
+										'foundation model',
+										'embedding',
+										'neural',
+										'deep learning',
+									],
+									maxHits: 5,
+								});
+
+						const score = (wRecency * recency) + (wAi * ai) + (wComplex * complexity);
+						const topic = (e.trigger.dataset.topic || '').toLowerCase();
+						const category =
+							topic === 'ai' || ai >= 0.8 ? 'ai'
+							: ai >= 0.4 ? 'ml'
+							: 'nonml';
+
+						return { ...e, endYear, recency, ai, complexity, score, category };
+					})
+					.sort((a, b) => b.score - a.score);
+
+				const aiProjects = projects.filter(p => p.category === 'ai');
+				const mlProjects = projects.filter(p => p.category === 'ml');
+				const nonMlProjects = projects.filter(p => p.category === 'nonml');
+
+				const grayRamp = ['var(--g-8)', 'var(--g-7)', 'var(--g-6)', 'var(--g-5)', 'var(--g-4)'];
+
+				// Baseline: non-ML projects stay grayscale.
+				for (const p of nonMlProjects) {
+					const card = cardEl(p.trigger);
+					const col  = p.trigger.closest('.event-col');
+					const dot  = col?.querySelector('.dot');
+					if (!card || !col) continue;
+
+					const grayIdx = Math.round(clamp(0, p.score, 1) * (grayRamp.length - 1));
+					const grayBg = grayRamp[grayIdx];
+					const ink = pickCardInkForBg(grayBg);
+
+					card.style.removeProperty('--card-bg');
+					card.style.setProperty('--card-color', grayBg);
+					card.style.setProperty('--card-text', ink.text);
+					card.style.setProperty('--card-date', ink.date);
+					if (dot) dot.style.setProperty('--dot-color', grayBg);
+
+					p.trigger.toggleAttribute('data-important', false);
+				}
+
+				// ML projects: use brand hues at ~50% saturation (muted, not striped).
+				let mlPaletteIndex = 0;
+				for (const p of mlProjects) {
+					const card = cardEl(p.trigger);
+					const col  = p.trigger.closest('.event-col');
+					const dot  = col?.querySelector('.dot');
+					if (!card || !col) continue;
+
+					const brand = brandPalette[mlPaletteIndex % brandPalette.length];
+					mlPaletteIndex += 1;
+
+					const brandRgb = resolveColorTokenToRgb(brand);
+					if (brandRgb) {
+						const muted = desaturateRgb(brandRgb, 0.5);
+						const lum = relativeLuminance(muted);
+						const ink = lum < 0.35
+							? { text: 'rgba(245,241,235,0.92)', date: 'rgba(245,241,235,0.7)' }
+							: { text: 'rgba(30,28,26,0.9)', date: 'rgba(30,28,26,0.55)' };
+
+						card.style.removeProperty('--card-bg');
+						card.style.setProperty('--card-color', rgbToCss(muted));
+						card.style.setProperty('--card-text', ink.text);
+						card.style.setProperty('--card-date', ink.date);
+						if (dot) dot.style.setProperty('--dot-color', rgbToCss(muted));
+					} else {
+						// Fallback: use the gray ramp if tokens can't be resolved.
+						const grayIdx = Math.round(clamp(0, p.score, 1) * (grayRamp.length - 1));
+						const grayBg = grayRamp[grayIdx];
+						const ink = pickCardInkForBg(grayBg);
+						card.style.removeProperty('--card-bg');
+						card.style.setProperty('--card-color', grayBg);
+						card.style.setProperty('--card-text', ink.text);
+						card.style.setProperty('--card-date', ink.date);
+						if (dot) dot.style.setProperty('--dot-color', grayBg);
+					}
+
+					p.trigger.toggleAttribute('data-important', true);
+				}
+
+				// AI topics: full brand color spectrum.
+				let aiPaletteIndex = 0;
+				for (const p of aiProjects) {
+					const card = cardEl(p.trigger);
+					const col  = p.trigger.closest('.event-col');
+					const dot  = col?.querySelector('.dot');
+					if (!card || !col) continue;
+
+					const brand = brandPalette[aiPaletteIndex % brandPalette.length];
+					aiPaletteIndex += 1;
+					const ink = pickCardInkForBrand(brand);
+
+					card.style.removeProperty('--card-bg');
+					card.style.setProperty('--card-color', brand);
+					card.style.setProperty('--card-text', ink.text);
+					card.style.setProperty('--card-date', ink.date);
+					if (dot) dot.style.setProperty('--dot-color', brand);
+
+					p.trigger.toggleAttribute('data-important', true);
+				}
+			}
+
+			function hideDetailsLink() {
+				if (!linkEl) return;
+				linkEl.hidden = true;
+				linkEl.removeAttribute('href');
+				linkEl.style.display = 'none';
+			}
+
+			function showDetailsLink(href, text) {
+				if (!linkEl) return;
+				linkEl.href = href;
+				if (text) linkEl.textContent = text;
+				linkEl.hidden = false;
+				linkEl.style.display = '';
+			}
+
+			function hideDetailsScores() {
+				if (!scoresEl) return;
+				scoresEl.hidden = true;
+				scoresEl.replaceChildren();
+			}
+
+			function scoreValue(trigger, key) {
+				const raw = trigger?.dataset?.[key];
+				if (raw == null || raw === '') return null;
+				const num = Number(raw);
+				if (!Number.isFinite(num)) return null;
+				return clamp(0, Math.round(num), 5);
+			}
+
+			function renderDetailsScores(trigger) {
+				if (!scoresEl || !trigger) return;
+
+				const dims = [
+					{ key: 'ml', label: 'AI & Machine Learning' },
+					{ key: 'stats', label: 'Statistics' },
+					{ key: 'bio', label: 'Biology' },
+					{ key: 'ds', label: 'Data Science' },
+					{ key: 'agents', label: 'Agents / RL' },
+				];
+
+				const values = dims
+					.map(d => ({ ...d, value: scoreValue(trigger, d.key) }))
+					.filter(d => d.value !== null);
+
+				if (!values.length) {
+					hideDetailsScores();
+					return;
+				}
+
+				scoresEl.replaceChildren();
+				for (const d of values) {
+					const row = document.createElement('div');
+					row.className = 'details-score';
+
+					const name = document.createElement('div');
+					name.className = 'details-score-name';
+					name.textContent = d.label;
+
+					const bar = document.createElement('div');
+					bar.className = 'details-score-bar';
+					bar.setAttribute('role', 'img');
+					bar.setAttribute('aria-label', `${d.label}: ${d.value} out of 5`);
+
+					for (let i = 1; i <= 5; i++) {
+						const tick = document.createElement('span');
+						tick.className = 'details-score-tick';
+						if (i <= d.value) tick.dataset.on = 'true';
+						bar.appendChild(tick);
+					}
+
+					const num = document.createElement('div');
+					num.className = 'details-score-num';
+					num.textContent = String(d.value);
+
+					row.append(name, bar, num);
+					scoresEl.appendChild(row);
+				}
+
+				scoresEl.hidden = false;
+			}
+
+			function hideDetailsTags() {
+				if (!tagsEl) return;
+				tagsEl.hidden = true;
+				tagsEl.replaceChildren();
+			}
+
+			function renderDetailsTags(trigger) {
+				if (!tagsEl || !trigger) return;
+				const raw = trigger.dataset.tags || '';
+				const tags = raw
+					.split(',')
+					.map(s => s.trim())
+					.filter(Boolean)
+					.slice(0, 12);
+
+				if (!tags.length) {
+					hideDetailsTags();
+					return;
+				}
+
+				tagsEl.replaceChildren();
+				for (const tag of tags) {
+					const chip = document.createElement('span');
+					chip.className = 'details-tag';
+					chip.textContent = tag;
+					tagsEl.appendChild(chip);
+				}
+				tagsEl.hidden = false;
+			}
+
+			hideDetailsLink();
+			hideDetailsScores();
+			hideDetailsTags();
+			applyProjectStyling();
 
 			function selectEntry(active) {
 				for (const { trigger } of entries) {
@@ -368,15 +938,44 @@
 					trigger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
 				}
 				if (!active) {
+					if (kickerEl)  kickerEl.textContent  = 'Event details';
 					if (titleEl)   titleEl.textContent   = 'Click an event';
 					if (dateEl)    dateEl.textContent    = '';
 					if (summaryEl) summaryEl.textContent = 'Click a career/education event to see a short summary here.';
+					if (linkEl) linkEl.textContent = 'Open link ↗';
+					hideDetailsLink();
+					hideDetailsScores();
+					hideDetailsTags();
 					return;
 				}
 				const entry = entries.find(e => e.trigger === active);
+				if (kickerEl)  kickerEl.textContent  = entry.kind === 'project' ? 'Project details' : 'Career & education details';
 				if (titleEl)   titleEl.textContent   = entry.title   || 'Event';
 				if (dateEl)    dateEl.textContent    = entry.date    || '';
 				if (summaryEl) summaryEl.textContent = entry.summary || '';
+				if (entry.kind === 'project') {
+					renderDetailsScores(entry.trigger);
+					renderDetailsTags(entry.trigger);
+				} else {
+					hideDetailsScores();
+					hideDetailsTags();
+				}
+				if (entry.kind !== 'project') {
+					hideDetailsLink();
+					return;
+				}
+				if (!entry.link) {
+					hideDetailsLink();
+					return;
+				}
+
+				let text = entry.linkLabel;
+				if (!text) {
+					if (entry.link.includes('github.com')) text = 'View on GitHub ↗';
+					else if (entry.link.includes('doi.org')) text = 'View publication ↗';
+					else text = 'Open link ↗';
+				}
+				showDetailsLink(entry.link, text);
 			}
 
 			for (const { trigger } of entries) {
